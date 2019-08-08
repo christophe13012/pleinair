@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Festival des Films de Plein Air</title>
+        <meta name="description" content="Festival des Films de Plein Air">
+
+
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+        <!-- Custom fonts for this template -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+
+        <!-- Custom styles for this template -->
+        <link  rel="stylesheet"  href="style.css">
+
+        S
+    </head>
+
+    <body id="accueil">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#">Festival des Films de Plein Air</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#banniere">Accueil</a></li>
+                        <li><a href="#encreActu">Actualités</a></li>
+                        <li><a href="#encrePortfolio">Les films</a></li> 
+                        <li><a class="exclure" id="lienReserver" data-toggle="modal" href="#myModal10">Reserver</a></li> 
+                        <li><a href="#contact">Contact</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="masthead" id="banniere">
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-lead-in">Festival des Films de Plein Air</div>
+                    <div class="intro-heading text-uppercase">Le cinema autrement !</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Presentation -->
+        <section id="presentation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Presentation du festival</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="large text-dark">L'association "Les Films de Plein Air" a pour vocation de faire découvrir des films d'auteur au grand public. Pour cela nous vous invitons, du 5 au 8 Aout, à visionner au parc Manceau, dans ce superbe décor et en exterieur, de magnifiques films du cinema d'auteur. </p>
+                        <p>Venez donc en famille ou entre amis pour découvrir le cinema autrement et gratuitement !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jury -->
+        <section class="bg-light" id="jury">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Le jury du Festival</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="jury/Louise-Bourgoin.jpg" alt="">
+                            <h4>Louise Bourgoin</h4>
+                            <p class="text-muted">Actrice</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="jury/2.jpg" alt="">
+                            <h4>Michel Hazanavicius</h4>
+                            <p class="text-muted">Realisateur</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="jury/3.jpg" alt="">
+                            <h4 >Thierry Neuvic</h4>
+                            <p class="text-muted">Acteur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="encreActu" class="col-lg-12 text-center">
+                        <p class="large text-dark" id="texteJury">Notre jury se réuniera pendant la semaine pour décerner 3 prix : meilleur film, meilleur acteur, meilleure actrice</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr id="encreActu">
+        <!-- Actualité -->
+        <section id="actu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Actualités</h2>
+                    </div>
+                </div>
+                <div id="main_area">
+                    <!-- Slider -->
+                    <div class="row">
+                        <div class="col-xs-12" id="slider">
+                            <!-- Top part of the slider -->
+                            <div class="row">
+                                <div class="col-sm-8" id="carousel-bounding-box">
+                                    <div class="carousel slide" id="myCarousel">
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="active item" data-slide-number="0">
+                                                <img src="images/news1.jpg"></div>
+
+                                            <div class="item" data-slide-number="1">
+                                                <img src="images/news2.jpg"></div>
+
+                                            <div class="item" data-slide-number="2">
+                                                <img src="images/news3.jpg"></div>
+
+                                            <div class="item" data-slide-number="3">
+                                                <img src="images/news4.jpg"></div>
+
+                                            <div class="item" data-slide-number="4">
+                                                <img src="images/news5.jpg"></div>
+
+                                            <div class="item" data-slide-number="5">
+                                                <img src="images/news6.jpg"></div>
+                                        </div><!-- Carousel nav -->
+                                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>                                       
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>                                       
+                                        </a>                                
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4" id="carousel-text"></div>
+
+                                <div id="slide-content" style="display: none;">
+                                    <div id="slide-content-0">
+                                        <h2>Les écrans sont bien installés</h2>
+                                        <p>Les liveurs de la société Transcan nous ont livrés il y a deux jours nos 2 grands écrans ainsi que le géant, nous les avons installé grace à nos bénévoles et ils sont prêts à acceuillir les projections</p>
+                                        <p class="sub-text">25 Juillet 2018 - <a href="#">Lire plus</a></p>
+                                    </div>
+
+                                    <div id="slide-content-1">
+                                        <h2>Réservez vos places</h2>
+                                        <p>Vous pouvez dès aujourd'hui réserver vos places pour les futures séances, à vos agendas !</p>
+                                        <p class="sub-text">26 Juillet 2018 - <a href="#">Lire plus</a></p>
+                                    </div>
+
+                                    <div id="slide-content-2">
+                                        <h2>Recrutement bénévoles</h2>
+                                        <p>Rejoignez nous, nous avons besoin de bénévoles pour nos differentes activités sur le festival</p>
+                                        <p class="sub-text">27 Juillet 2018 - <a href="#">Lire plus</a></p>
+                                    </div>
+
+                                    <div id="slide-content-3">
+                                        <h2>Food-trucks dans les starting blocks</h2>
+                                        <p>Les achats ont été faits aupres de nos fournisseurs pour vous servir de bons rafraichissements et collations durant le festival</p>
+                                        <p class="sub-text">28 Juillet 2018 - <a href="#">Lire plus</a></p>
+                                    </div>
+
+                                    <div id="slide-content-4">
+                                        <h2>Recherche DJ pour animer les soirées</h2>
+                                        <p>Apres les projections, que diriez vous de danser jusqu'au bout de la nuit ?</p>
+                                        <p class="sub-text">29 Juillet 2018 - <a href="#">Lire plus</a></p>
+                                    </div>
+
+                                    <div id="slide-content-5">
+                                        <h2>Prix du public</h2>
+                                        <p>Parallelement au prix du jury, nous allons mettre en place un prix du public, à vos votes</p>
+                                        <p class="sub-text">30 Juillet 2018 - <a href="#">Lire plus</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/Slider-->
+
+                    <div class="row hidden-xs" id="slider-thumbs">
+                        <!-- Bottom switcher of slider -->
+                        <ul class="hide-bullets">
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-0"><img src="images/news1mini.jpg"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-1"><img src="images/news2mini.jpg"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-2"><img src="images/news3mini.jpg"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-3"><img src="images/news4mini.jpg"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-4"><img src="images/news5mini.jpg"></a>
+                            </li>
+
+                            <li  class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-5"><img src="images/news6mini.jpg"></a>
+                            </li>
+                        </ul>                 
+                    </div><span id="encrePortfolio"></span>
+                </div>
+            </div>
+        </section>
+        <hr >
+        <!-- Portfolio Grid -->
+        <section class="bg-light" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">LES FILMS</h2>
+                        <h3 class="section-subheading text-muted">Voici tous les films en compétition</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#myModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/01-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Enter the void (2010)</h4>
+                            <p class="text-muted">5 Aout 19h</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#myModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/02-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Dead man (1995)</h4>
+                            <p class="text-muted">5 Aout 22h</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#myModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/03-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Holy motors (2012)</h4>
+                            <p class="text-muted">6 Aout 19h</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#myModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/04-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Eraserhead (1978)</h4>
+                            <p class="text-muted">6 Aout 22h</p>
+                        </div>  
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#myModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/05-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>La Haine (1995)</h4>
+                            <p class="text-muted">7 Aout 19h</p>
+                        </div>  
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#myModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/06-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Un prophète (2009)</h4>
+                            <p class="text-muted">7 Aout 22h</p>
+                        </div>  
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#myModal7">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/07-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>The Master (2012)</h4>
+                            <p class="text-muted">8 Aout 15h</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#myModal8">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/08-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Melancholia (2011)</h4>
+                            <p class="text-muted">8 Aout 17h</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#myModal9">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="images/09-thumbnail.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Under the Skin (2014)</h4>
+                            <p class="text-muted">8 Aout 20h</p>
+                        </div>  
+                    </div> 
+
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Nous contacter</h2>
+                        <h3 class="section-subheading text-muted">Pour toute question, n'hesitez pas à remplir ce formulaire</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="name" type="text" placeholder="Votre nom *" required="required" data-validation-required-message="Merci d'entrer votre nom">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" type="email" placeholder="Votre adresse mail *" required="required" data-validation-required-message="Merci d'entrer votre adresse mail">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="phone" type="tel" placeholder="Votre numéro de telephone *" required="required" data-validation-required-message="Merci d'entrer votre numero de téléphone">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" placeholder="Votre message *" required="required" data-validation-required-message="Merci d'entrer votre message"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12">
+                                    <label id="conditionCnil"><input id="checkCnil" type="checkbox">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande d'informations et de la relation commerciale qui peut en découler.</label> 
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Envoyer Le Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <span class="copyright">Copyright &copy; Festivalfilmsdepleinair.com 2018</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="list-inline quicklinks">
+                            <li class="list-inline-item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="text-uppercase" id="titreResum">Enter the void (2010)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <img class="img-responsive center-block d-block mx-auto" src="images/01-thumbnail.jpg" alt="">
+                        <p><b>Synopsis : </b>Oscar et sa sœur Linda habitent depuis peu à Tokyo. Oscar survit de petits deals de drogue alors que Linda est stripteaseuse dans une boite de nuit. Un soir, lors d'une descente de police, Oscar est touché par une balle. Tandis qu'il agonise, son esprit, fidèle à la promesse faite à sa sœur de ne jamais l'abandonner, refuse de quitter le monde des vivants. Son esprit erre alors dans la ville et ses visions deviennent de plus en plus chaotiques et cauchemardesques. Passé, présent et futur se mélangent dans un maelstrom hallucinatoire.</p>
+                        <ul class="list-inline">
+                            <li>Date de sortie : Mai 2010</li>
+                            <li>Réalisateur : Gaspar Noé</li>
+                            <li>Seance plein air : 5 Aout 19h</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="text-uppercase" id="titreResum">Dead man (1995)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <img class="img-responsive center-block d-block mx-auto" src="images/02-thumbnail.jpg" alt="">
+                        <p><b>Synopsis : </b>Dans la deuxième moitié du XIXe siècle, Bill Blake, jeune comptable en route pour le confins de l'Ouest américain, entreprend un voyage initiatique où il devient malgré lui un hors-la-loi traqué. Blessé, il est recueilli par Nobody, un Amérindien lettré rejeté des siens, qui l'identifie d'emblée à son homonyme défunt, le poète anglais William Blake, et décide de sauver son âme.</p>
+                        <ul class="list-inline">
+                            <li>Date de sortie : Décembre 1995</li>
+                            <li>Réalisateur : Jim Jarmusch</li>
+                            <li>Seance plein air : 5 Aout 22h</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="text-uppercase" id="titreResum">Holy motors (2012)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <img class="img-responsive center-block d-block mx-auto" src="images/03-thumbnail.jpg" alt="">
+                        <p><b>Synopsis : </b>De l'aube à la nuit, quelques heures dans l'existence de Monsieur Oscar, un être qui voyage de vie en vie. Tour à tour grand patron, meurtrier, mendiante, créature monstrueuse, père de famille... M. Oscar semble jouer des rôles, plongeant en chacun tout entier - mais où sont les caméras ? Il est seul, uniquement accompagné de Céline, longue dame blonde aux commandes de l'immense machine qui le transporte dans Paris et autour. Tel un tueur consciencieux allant de gage en gage. À la poursuite de la beauté du geste. Du moteur de l'action. Des femmes et des fantômes de sa vie. Mais où est sa maison, sa famille, son repos ?</p>
+                        <ul class="list-inline">
+                            <li>Date de sortie : Juillet 2012</li>
+                            <li>Réalisateur : Leos Carax</li>
+                            <li>Seance plein air : 6 Aout 19h</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal4" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="text-uppercase" id="titreResum">Eraserhead (1978)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <img class="img-responsive center-block d-block mx-auto" src="images/04-thumbnail.jpg" alt="">
+                        <p><b>Synopsis : </b>Un homme est abandonné par son amie qui lui laisse la charge d'un enfant prématuré, fruit de leur union. Il s'enfonce dans un univers fantasmatique pour fuir cette cruelle réalité.</p>
+                        <ul class="list-inline">
+                            <li>Date de sortie : Juin 1978</li>
+                            <li>Réalisateur : David Lynch</li>
+                            <li>Seance plein air : 6 Aout 22h</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal5" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="text-uppercase" id="titreResum">La Haine (1995)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <img class="img-responsive center-block d-block mx-auto" src="images/05-thumbnail.jpg" alt="">
+                        <p><b>Synopsis : </b>Trois copains d'une banlieue ordinaire traînent leur ennui et leur jeunesse qui se perd. Ils vont vivre la journée la plus importante de leur vie après une nuit d'émeutes provoquée par le passage à tabac d'Abdel Ichah par un inspecteur de police lors d'un interrogatoire.</p>
+                        <ul class="list-inline">
+                            <li>Date de sortie : Mai 1995</li>
+                            <li>Réalisateur : Mathieu Kassovitz</li>
+                            <li>Seance plein air : 7 Aout 19h</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal6" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="text-uppercase" id="titreResum">Un prophète (2009)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <img class="img-responsive center-block d-block mx-auto" src="images/06-thumbnail.jpg" alt="">
+                        <p><b>Synopsis : </b>Condamné à six ans de prison, Malik El Djebena ne sait ni lire, ni écrire. A son arrivée en Centrale, seul au monde, il paraît plus jeune, plus fragile que les autres détenus. Il a 19 ans.
+                            D'emblée, il tombe sous la coupe d'un groupe de prisonniers corses qui fait régner sa loi dans la prison. Le jeune homme apprend vite. Au fil des " missions ", il s'endurcit et gagne la confiance des Corses. 
+                            Mais, très vite, Malik utilise toute son intelligence pour développer discrètement son propre réseau....</p>
+                        <ul class="list-inline">
+                            <li>Date de sortie : Aout 2009</li>
+                            <li>Réalisateur : Jacques Audiard</li>
+                            <li>Seance plein air : 7 Aout 22h</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal7" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="text-uppercase" id="titreResum">The Master (2012)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <img class="img-responsive center-block d-block mx-auto" src="images/07-thumbnail.jpg" alt="">
+                        <p><b>Synopsis : </b>Freddie, un vétéran, revient en Californie après s’être battu dans le Pacifique. Alcoolique, il distille sa propre gnôle et contient difficilement la violence qu’il a en lui… Quand Freddie rencontre Lancaster Dodd – « le Maître », charismatique meneur d’un mouvement nommé la Cause, il tombe rapidement sous sa coupe...</p>
+                        <ul class="list-inline">
+                            <li>Date de sortie : Décembre 2012</li>
+                            <li>Réalisateur : Paul Thomas Anderson</li>
+                            <li>Seance plein air : 8 Aout 15h</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal8" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="text-uppercase" id="titreResum">Melancholia (2011)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <img class="img-responsive center-block d-block mx-auto" src="images/08-thumbnail.jpg" alt="">
+                        <p><b>Synopsis : </b>À l'occasion de leur mariage, Justine et Michael donnent une somptueuse réception dans la maison de la soeur de Justine et de son beau-frère. Pendant ce temps, la planète Melancholia se dirige vers la Terre...</p>
+                        <ul class="list-inline">
+                            <li>Date de sortie : Aout 2011</li>
+                            <li>Réalisateur : Lars von Trier</li>
+                            <li>Seance plein air : 8 Aout 17h</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal9" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="text-uppercase" id="titreResum">Under the Skin (2014)</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <img class="img-responsive center-block d-block mx-auto" src="images/09-thumbnail.jpg" alt="">
+                        <p><b>Synopsis : </b>Une extraterrestre arrive sur Terre pour séduire des hommes avant de les faire disparaître.</p>
+                        <ul class="list-inline">
+                            <li>Date de sortie : Juin 2014</li>
+                            <li>Réalisateur : Jonathan Glazer</li>
+                            <li>Seance plein air : 8 Aout 20h</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal fade" id="myModal10" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="text-uppercase" id="titreResum">Reservez vos places</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p><b>Selectionnez le nombre de place voulu puis remplissez vos informations :</b></p>
+                        <div id="reservationFilm">
+
+                            <form>
+                                <div id="filmReservation" class="form-group">
+                                    <label for="sort" class="col-sm-6 control-label"> Enter the void - 5/08 19h : </label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="sort" id="sort">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sort" class="col-sm-6 control-label">Dead man - 5/08 22h : </label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="sort" id="sort">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sort" class="col-sm-6 control-label">Holy motors - 6/08 19h : </label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="sort" id="sort">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sort" class="col-sm-6 control-label">Eraserhead - 6/08 22h : </label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="sort" id="sort">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sort" class="col-sm-6 control-label">La Haine - 7/08 19h : </label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="sort" id="sort">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sort" class="col-sm-6 control-label">Un prophète - 7/08 22h : </label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="sort" id="sort">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sort" class="col-sm-6 control-label">The Master - 8/08 15h : </label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="sort" id="sort">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sort" class="col-sm-6 control-label">Melancholia - 8/08 17h :</label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="sort" id="sort">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sort" class="col-sm-6 control-label">Under the Skin - 8/08 20h : </label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="sort" id="sort">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="formulaireReservation">
+                        <form class="form-horizontal" action="/action_page.php">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="nom">Nom:</label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" id="nom" placeholder="Entrez votre nom">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="prenom">Prénom:</label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" id="prenom" placeholder="Entrez votre prénom">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="email">Email:</label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" id="email" placeholder="Entrer votre email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="num" >Téléphone:</label>
+                                <div class="col-sm-6">
+                                    <input type="tel" class="form-control" id="num" placeholder="Entrer votre numéro de téléphone">
+                                </div>
+                            </div>
+
+
+                        </form>
+                        <div >
+                            <label id="conditionCnilForm"><input id="checkCnil" type="checkbox">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande d'informations et de la relation commerciale qui peut en découler.</label> 
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Reserver</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+
+        </script>
+
+
+        <script>
+            /*  Smooth scroll */
+            $(document).ready(function(){
+                // Add scrollspy to <body>
+                $('body').scrollspy({target: ".navbar", offset: 50});   
+
+                // Add smooth scrolling on all links inside the navbar
+                $("#myNavbar a:not(.exclure)").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function(){
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    }  // End if
+                });
+            });
+        </script>
+        <script>
+            /* Carroussel */
+            jQuery(document).ready(function($) {
+
+                $('#myCarousel').carousel({
+                    interval: 5000
+                });
+
+                $('#carousel-text').html($('#slide-content-0').html());
+
+                //Handles the carousel thumbnails
+                $('[id^=carousel-selector-]').click( function(){
+                    var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+                    var id = parseInt(id);
+                    $('#myCarousel').carousel(id);
+                });
+
+
+                // When the carousel slides, auto update the text
+                $('#myCarousel').on('slid.bs.carousel', function (e) {
+                    var id = $('.item.active').data('slide-number');
+                    $('#carousel-text').html($('#slide-content-'+id).html());
+                });
+            });
+        </script>
+
+
+    </body>
+
+</html>
